@@ -2791,9 +2791,9 @@ body {
 }
 
 .artist__info {
-  width: 80%;
+  width: 70%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   display: flex;
 }
@@ -2804,7 +2804,7 @@ body {
 
 .search-results {
   height: 100%;
-  width: 65%;
+  width: 70%;
   background-color: #add8e6;
   overflow: auto;
 }
