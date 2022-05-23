@@ -1,0 +1,22 @@
+{
+  "name": "lyrics-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel public/index.html"
+  },
+  "author": "henrik3",
+  "license": "ISC",
+  "dependencies": {
+    "@material/button": "^14.0.0",
+    "@material/card": "^14.0.0",
+    "@material/linear-progress": "^14.0.0",
+    "@material/textfield": "^14.0.0",
+    "parcel": "^2.5.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0"
+  }
+}

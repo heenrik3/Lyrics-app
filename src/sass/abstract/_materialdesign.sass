@@ -1,0 +1,15 @@
+@use "node_modules/@material/button/styles"
+@use "node_modules/@material/card"
+@use "node_modules/@material/linear-progress"
+
+@use "node_modules/@material/floating-label/mdc-floating-label"
+@use "node_modules/@material/line-ripple/mdc-line-ripple"
+@use "node_modules/@material/notched-outline/mdc-notched-outline"
+@use "node_modules/@material/textfield"
+
+@include card.core-styles
+@include textfield.core-styles
+@include linear-progress.core-styles
+
+.mdc-button, .mdc-text-field, .mdc-text-field > *
+  font-size: inherit

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../src/sass/main.sass" />
+    <title>Lyrics Search</title>
+  </head>
+  <body>
+    <div class="app">
+      <main class="main">
+        <div class="artist__info">
+          <label class="mdc-text-field mdc-text-field--filled">
+            <span class="mdc-text-field__ripple"></span>
+            <span class="mdc-floating-label" id="my-label-id">Artista</span>
+            <input
+              class="mdc-text-field__input"
+              type="text"
+              aria-labelledby="my-label-id"
+            />
+            <span class="mdc-line-ripple"></span>
+          </label>
+          <label class="mdc-text-field mdc-text-field--filled">
+            <span class="mdc-text-field__ripple"></span>
+            <span class="mdc-floating-label" id="my-label-id">Música</span>
+            <input
+              class="mdc-text-field__input"
+              type="text"
+              aria-labelledby="my-label-id"
+            />
+            <span class="mdc-line-ripple"></span>
+          </label>
+
+          <button class="mdc-button mdc-button--raised mdc-button--leading">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">encontrar</span>
+          </button>
+        </div>
+
+        <div class="search-results"></div>
+      </main>
+    </div>
+  </body>
+  <script type="module" src="../src/js/app.js" charset="utf-8"></script>
+</html>
