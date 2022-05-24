@@ -2768,32 +2768,22 @@ body {
   font-size: 1.4rem;
 }
 
-.mdc-button--raised {
-  background-color: #ee025f !important;
-}
-
 .main {
-  height: 80%;
+  height: 90%;
   width: 100rem;
-  background-color: #fff;
+  grid-gap: 2rem;
   border-radius: 1rem;
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-}
-
-.main > :first-child {
-  margin-top: 4rem;
-}
-
-.main > :not(:last-child) {
-  margin-bottom: 2rem;
+  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 1fr;
+  padding: 2rem;
+  display: grid;
 }
 
 .artist__info {
   width: 70%;
   flex-direction: row;
   justify-content: space-between;
+  justify-self: center;
   align-items: center;
   display: flex;
 }
@@ -2805,7 +2795,46 @@ body {
 .search-results {
   height: 100%;
   width: 70%;
-  background-color: #add8e6;
+  grid-gap: 2rem;
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  display: grid;
+  overflow: auto;
+}
+
+.search-results > * {
+  justify-self: center;
+}
+
+.search__picture {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
+.search__image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.search__artist {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.search__name {
+  font-size: 1.8rem;
+}
+
+.search__lyrics {
+  height: 100%;
+  width: 50%;
+  text-align: justify;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.8rem;
   overflow: auto;
 }
 
@@ -2813,10 +2842,12 @@ body {
   height: 100vh;
   max-height: 100vh;
   width: 100vw;
-  background-color: #ee025f;
+  background-color: #303030;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=index.c745f491.css.map */

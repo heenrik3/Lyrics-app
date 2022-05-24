@@ -1,18 +1,24 @@
 .main
-  height: 80%
+  height: 90%
   width: 100rem
+  padding: 2rem
   border-radius: 1rem
-  background-color: white
+  // background-color: white
 
-  display: flex
-  flex-direction: column
-  align-items: center
+  // display: flex
+  // flex-direction: column
+  // align-items: center
 
-  & > :first-child
-    margin-top: 4rem
+  display: grid
+  grid-gap: 2rem
+  grid-template-rows: 1fr 6fr
+  grid-template-columns: 1fr
 
-  & > *:not(:last-child)
-    margin-bottom: 2rem
+  // & > :first-child
+  //   margin-top: 4rem
+  //
+  // & > *:not(:last-child)
+  //   margin-bottom: 2rem
 
 .artist__info
   width: 70%
@@ -20,17 +26,53 @@
   flex-direction: row
   align-items: center
   justify-content: space-between
+  justify-self: center
 
   & > *:not(:last-child)
     margin-right: 1rem
 
-  .mdc-text-field
-
-  & .mdc-text-field
+  // .mdc-text-field
+  //
+  // & .mdc-text-field
 
 
 .search-results
   height: 100%
   width: 70%
-  background-color: lightblue
+  // background-color: lightblue
+  overflow: auto
+  justify-self: center
+
+  & > *
+    justify-self: center
+
+  display: grid
+  grid-gap: 2rem
+  grid-template-rows: 1fr 5fr
+  grid-template-columns: 1fr
+
+.search__picture
+  height: 15rem
+  width: 15rem
+  object-fit: cover
+
+.search__image
+  height: 100%
+  width: 100%
+  border-radius: 50%
+
+.search__artist
+  font-weight: bold
+  font-size: 2rem
+
+.search__name
+  font-size: 1.8rem
+
+.search__lyrics
+  height: 100%
+  width: 50%
+  padding-left: 1rem
+  padding-right: 1rem
+  text-align: justify
+  font-size: 1.8rem
   overflow: auto
