@@ -2772,6 +2772,7 @@ body {
   height: 90%;
   width: 100rem;
   grid-gap: 2rem;
+  background-color: #fff;
   border-radius: 1rem;
   grid-template-rows: 1fr 6fr;
   grid-template-columns: 1fr;
@@ -2779,11 +2780,14 @@ body {
   display: grid;
 }
 
+.main > * {
+  justify-self: center;
+}
+
 .artist__info {
   width: 70%;
   flex-direction: row;
   justify-content: space-between;
-  justify-self: center;
   align-items: center;
   display: flex;
 }
@@ -2842,12 +2846,10 @@ body {
   height: 100vh;
   max-height: 100vh;
   width: 100vw;
-  background-color: #303030;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
-  color: #fff !important;
 }
 
 /*# sourceMappingURL=index.c745f491.css.map */
