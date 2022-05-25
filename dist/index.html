@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/index.c745f491.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <script src="/index.59a40e7a.js" charset="utf-8" defer=""></script>
     <title>Lyrics Search</title>
   </head>
   <body>
     <div class="app">
-      <main class="main">
+      <main class="search">
         <h1>Lyrics Search</h1>
-        <div class="artist__info">
+        <div class="search__input">
           <label class="mdc-text-field mdc-text-field--filled">
             <span class="mdc-text-field__ripple"></span>
             <span class="mdc-floating-label" id="my-label-id">Artista</span>
@@ -31,15 +33,26 @@
           </button>
         </div>
 
-        <div class="search-results">
-          <picture class="search__picture">
-            <img class="search__image" src="/avatar.ff2132d9.png" alt="avatar placeholder">
-          </picture>
+        <div class="search__results">
+          <div class="mdc-card search__card--1">
+            <div class="search__wrapper">
+              <picture class="search__picture">
+                <img class="search__image" src="/avatar.ff2132d9.png" alt="avatar placeholder">
+              </picture>
 
-          <span class="search__artist"></span>
-          <span class="search__song"></span>
+              <span class="search__artist">Artista</span>
+              <span class="search__song">Música</span>
+            </div>
+          </div>
 
-          <span class="search__lyrics"> </span>
+          <div class="mdc-card search__card--2">
+            <div class="search__wrapper">
+              <div class="search__error">
+                <span class="search__error-message">
+                  Comece procurando uma letra de música! 😃👍</span>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">
@@ -47,5 +60,4 @@
       </footer>
     </div>
   </body>
-  <script src="/index.59a40e7a.js" charset="utf-8" defer=""></script>
 </html>

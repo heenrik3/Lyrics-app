@@ -1,5 +1,34 @@
 import { MDCRipple } from '@material/ripple'
 import { MDCTextField } from '@material/textfield'
+// import { MDCLinearProgress } from '@material/linear-progress'
+
+const textFields = document.querySelectorAll('.mdc-text-field')
+const buttonElement = document.querySelector('.mdc-button')
+// const linearProgressElement = document.querySelector('.mdc-linear-progress')
+
+const card_1 = document
+  .querySelector('.search__card--1')
+  .querySelector('.search__wrapper')
+const card_2 = document
+  .querySelector('.search__card--2')
+  .querySelector('.search__wrapper')
+
+let flag
+
+// const linearProgressInstance = new MDCLinearProgress(linearProgressElement)
+const buttonInstance = new MDCRipple(buttonElement)
+const artist_text_field = new MDCTextField(textFields[0])
+const song_text_field = new MDCTextField(textFields[1])
+
+function activeSpinner(el) {
+  const markup = `<div class="spinner__container">
+                    <i class="fas fa-circle-notch spinner-active"></i>
+                  </div>`
+
+  el.innerHTML = ''
+
+  el.insertAdjacentHTML('beforeend', markup)
+}
 
 async function fetchData(url) {
   try {
@@ -14,15 +43,100 @@ async function fetchData(url) {
   }
 }
 
-async function getAllData(artist, song) {
-  const lyric_api = 'https://api.lyrics.ovh/v1/'
+function resolveImage(user_data, images) {
+  let markup_success
+  let markup_error = `
+      <div class="search__error">
+
+            <i class="fas fa-times"></i>
+            <span class="search__error--message">Imagem de artista não encontrada!</span>
+
+      </div>
+  `
+
+  if (images) {
+    const index = Math.floor(Math.random() * images.length)
+
+    const image = images[index]
+
+    markup_success = `<picture class="search__picture">
+                      <img
+                        class="search__image"
+                        src="${image}"
+                        alt="avatar placeholder"
+                      />
+                    </picture>
+
+                    <span class="search__artist">${user_data.artist.toUpperCase()}</span>
+                    <span class="search__song">${user_data.song.toUpperCase()}</span>
+                  `
+  }
+
+  card_1.innerHTML = ''
+
+  card_1.insertAdjacentHTML('beforeend', images ? markup_success : markup_error)
+
+  toggleSearchButton()
+}
+
+function resolveLyrics(lyrics) {
+  const markup_success = `
+      <span class="search__lyrics">${lyrics}</span>
+    `
+
+  const markup_error = `
+      <div class="search__error">
+          <i class="fas fa-times"></i>
+          <span class="search__error--message">Letra de música não encontrada!</span>
+      </div>
+  `
+  card_2.innerHTML = ''
+
+  card_2.insertAdjacentHTML('beforeend', lyrics ? markup_success : markup_error)
+
+  toggleSearchButton()
+}
+
+function toggleSearchButton() {
+  flag = flag + 1
+
+  if (flag == 2) buttonElement.disabled = false
+}
+
+function waitForDataAnimation() {
+  activeSpinner(card_1)
+  activeSpinner(card_2)
+}
+
+function clearInputsAndDisableButton() {
+  artist_text_field.value = song_text_field.value = ''
+  buttonElement.disabled = true
+}
+
+async function fetchImage(user_data) {
   const image_api = 'https://imsea.herokuapp.com/api/1?q='
 
-  let lyrics = undefined
-  let picture = undefined
+  const image_url = image_api + user_data.artist
 
-  const lyric_url = lyric_api + artist + '/' + song
-  const image_url = image_api + artist
+  let images
+
+  await fetchData(image_url).then((data) => {
+    if (!data) return
+
+    if (data.results.length < 1) return
+
+    images = data.results
+  })
+
+  return images
+}
+
+async function fetchLyrics(user_data) {
+  const lyric_api = 'https://api.lyrics.ovh/v1/'
+
+  const lyric_url = lyric_api + user_data.artist + '/' + user_data.song
+
+  let lyrics
 
   await fetchData(lyric_url).then((data) => {
     if (data) {
@@ -30,48 +144,43 @@ async function getAllData(artist, song) {
     }
   })
 
-  await fetchData(image_url).then((data) => {
-    if (data) {
-      picture = data.results[0]
-    }
-  })
-
-  return { lyric: lyrics, picture: picture }
-
-  // console.log(lyrics, picture)
+  return lyrics
 }
 
-function renderData(artist, song, data) {
-  const artist_picture = document.querySelector('.search__image')
-  const artist_name_text = document.querySelector('.search__artist')
-  const song_name_text = document.querySelector('.search__song')
-  const lyrics_text = document.querySelector('.search__lyrics')
+function newSearch() {
+  const artist = artist_text_field.value
+  const song = song_text_field.value
 
-  artist_picture.src = data.picture
-  artist_name_text.textContent = artist.toUpperCase()
-  song_name_text.textContent = song.toUpperCase()
-  lyrics_text.textContent = data.lyric
+  if (!artist || !song) return
+
+  flag = 0
+
+  clearInputsAndDisableButton()
+
+  waitForDataAnimation()
+
+  const user_data = { artist: artist, song: song }
+
+  fetchImage(user_data).then((data) => {
+    resolveImage(user_data, data)
+  })
+
+  fetchLyrics(user_data).then((data) => {
+    resolveLyrics(data)
+  })
 }
 
 function start() {
-  const textFields = document.querySelectorAll('.mdc-text-field')
-  const button = document.querySelector('.mdc-button')
+  textFields.forEach((field) => {
+    field.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') newSearch()
 
-  const buttonRipple = new MDCRipple(button)
-  const artist_text_field = new MDCTextField(textFields[0])
-  const song_text_field = new MDCTextField(textFields[1])
-
-  button.addEventListener('click', () => {
-    const artist = artist_text_field.value
-    const song = song_text_field.value
-
-    if (!artist || !song) return
-
-    getAllData(artist, song).then((data) => {
-      console.log(data)
-      renderData(artist, song, data)
+      textFields.forEach((field) => {
+        field.blur()
+      })
     })
   })
+  buttonElement.addEventListener('click', newSearch)
 }
 
 start()
