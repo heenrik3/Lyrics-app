@@ -7,13 +7,13 @@
 53C:\Users\Henrique\Documents\Javascript\Lyrics app\src132978018500789058 1
 82C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\css-tree\lib\common132977910433192998 1
 98C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\textfield\foundation.d.ts132978006193067862 0
-54C:\Users\Henrique\Documents\Javascript\Lyrics app\dist132978853728198645 1
+54C:\Users\Henrique\Documents\Javascript\Lyrics app\dist132979536520146983 1
 71C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\escalade132977910426413162 1
 71C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\msgpackr132977910428842405 1
 83C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\posthtml-render\dist132977910425939334 1
 100C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\focus-ring\_focus-ring.scss132977913349933678 0
 90C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\theme\_theme.scss132977913350709349 0
-76C:\Users\Henrique\Documents\Javascript\Lyrics app\src\sass\layout\_main.sass132978842636338534 0
+76C:\Users\Henrique\Documents\Javascript\Lyrics app\src\sass\layout\_main.sass132979102727148840 0
 89C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\entities\lib\maps\xml.json132977910427499515 0
 96C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\workers\src\childState.js132977910426741364 0
 112C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@babel\highlight\node_modules\color-name\index.js132977910425379517 0
@@ -86,7 +86,7 @@
 87C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\source-map\lib\base64.js132977910426267341 0
 87C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\lmdb\prebuilds\win32-x64132977910438109855 1
 95C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\floating-label\LICENSE132978006191726650 0
-63C:\Users\Henrique\Documents\Javascript\Lyrics app\src\js\app.js132978853726865558 0
+63C:\Users\Henrique\Documents\Javascript\Lyrics app\src\js\app.js132979147955928582 0
 101C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\packager-js\src\DevPackager.js132977910426307382 0
 96C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\type-fest\source\stringified.d.ts132977910430055804 0
 80C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\react-refresh\cjs132977910426036895 1
@@ -153,7 +153,7 @@
 118C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\optimizer-image\parcel-image.linux-x64-gnu.node132977910432470148 0
 96C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\css-tree\lib\syntax\node\index.js132977910431989433 0
 67C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\.bin132977914726653254 1
-68C:\Users\Henrique\Documents\Javascript\Lyrics app\src\sass\main.sass132978723208015378 0
+68C:\Users\Henrique\Documents\Javascript\Lyrics app\src\sass\main.sass132979104037982959 0
 115C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\runtime-js\lib\helpers\browser\css-loader.js132977910426959808 0
 99C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@swc\helpers\lib\_read_only_error.js132977910431570382 0
 77C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\dom-serializer132977910427239420 1
@@ -166,7 +166,7 @@
 85C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\node-gyp-build\LICENSE132977910423308753 0
 112C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@babel\highlight\node_modules\ansi-styles\license132977910424383452 0
 105C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\htmlnano\lib\modules\removeOptionalTags.js132977910429251460 0
-74C:\Users\Henrique\Documents\Javascript\Lyrics app\src\sass\base\_base.sass132978013054728755 0
+74C:\Users\Henrique\Documents\Javascript\Lyrics app\src\sass\base\_base.sass132979103271409395 0
 93C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\css\node\index.js.flow132977910423896466 0
 106C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\core\test\fixtures\config-malformed132977910424750924 1
 94C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\caniuse-lite\data\regions\AZ.js132977910431013250 0
@@ -204,7 +204,7 @@
 113C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\textfield\character-counter\component.js132978006191906817 0
 90C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\css-tree\lib\lexer\index.js132977910431819601 0
 85C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\path-type\package.json132977910423288737 0
-67C:\Users\Henrique\Documents\Javascript\Lyrics app\public\index.html132978853685192690 0
+67C:\Users\Henrique\Documents\Javascript\Lyrics app\public\index.html132979052459831180 0
 104C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\touch-target\_touch-target.scss132977913350109347 0
 82C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\semver\package.json132977910425700776 0
 81C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\.package-lock.json132978007488276243 0
@@ -283,7 +283,7 @@
 72C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\type-fest132977910427870187 1
 88C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\resolve-from\package.json132977910423288737 0
 101C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\yaml\browser\dist\warnings-df54cb69.js132977910431101588 0
-74C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\avatar.ff2132d9.png132978840839594880 0
+74C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\avatar.ff2132d9.png132979536519526415 0
 81C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\picomatch\index.js132977914725799964 0
 81C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\chrome-trace-event132977910426153801 1
 100C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\lmdb\dependencies\lz4\lib\dll\example132977910438259528 1
@@ -2035,7 +2035,7 @@
 93C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@material\density\package.json132977913349848176 0
 89C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\nan\nan_maybe_pre_43_inl.h132977910427860174 0
 93C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\mdn-data\css\units.schema.json132977910429450523 0
-65C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.html132978853686104673 0
+65C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.html132979536520096935 0
 76C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\nan\nan_new.h132977910427970282 0
 112C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\Makefile132977910428110399 0
 87C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\escalade\sync\index.d.ts132977910426691313 0
@@ -2381,7 +2381,7 @@
 94C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\caniuse-lite\data\regions\BA.js132977910431071562 0
 103C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\caniuse-lite\data\features\matchmedia.js132977910438189466 0
 98C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\caniuse-lite\data\features\sha-2.js132977910439873627 0
-73C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.c745f491.css132978842661276366 0
+73C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.c745f491.css132979536519826694 0
 86C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\json5\dist\index.min.js132977910425730803 0
 83C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\json5\dist\index.mjs132977910428060351 0
 101C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\json-parse-even-better-errors\index.js132977910423278723 0
@@ -4058,7 +4058,7 @@
 103C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\transformer-postcss\package.json132977910426999841 0
 116C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\transformer-postcss\src\PostCSSTransformer.js132977910426838206 0
 107C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\transformer-postcss\lib\constants.js132977910423906469 0
-77C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.c745f491.css.map132978842661286377 0
+77C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.c745f491.css.map132979536519856725 0
 91C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\transformer-json\lib132977910423757512 1
 95C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\transformer-json\LICENSE132977910423368804 0
 100C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\transformer-json\package.json132977910425100315 0
@@ -4177,7 +4177,7 @@
 110C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\resolver-default\lib\DefaultResolver.js132977910423935447 0
 94C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\reporter-dev-server\lib132977910428652208 1
 94C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\reporter-dev-server\src132977910428330604 1
-72C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.59a40e7a.js132978853728178622 0
+72C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.59a40e7a.js132979536519526415 0
 107C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\reporter-dev-server\src\HMRServer.js132977910425650728 0
 110C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\reporter-dev-server\src\serverErrors.js132977910426327403 0
 108C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\@parcel\reporter-dev-server\src\types.js.flow132977910423975416 0
@@ -4962,4 +4962,4 @@
 78C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\.bin\semver.ps1132977910441331687 0
 76C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\.bin\svgo.cmd132977910441331687 0
 76C:\Users\Henrique\Documents\Javascript\Lyrics app\node_modules\.bin\svgo.ps1132977910441331687 0
-76C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.59a40e7a.js.map132978853728198645 0
+76C:\Users\Henrique\Documents\Javascript\Lyrics app\dist\index.59a40e7a.js.map132979536519566454 0

@@ -14,6 +14,9 @@
     "@material/card": "^14.0.0",
     "@material/linear-progress": "^14.0.0",
     "@material/textfield": "^14.0.0",
+    "chalk": "^5.0.1",
+    "each-async": "^2.0.0",
+    "indent-string": "^5.0.0",
     "parcel": "^2.5.0"
   },
   "devDependencies": {
